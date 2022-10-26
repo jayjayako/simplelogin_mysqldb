@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="backendscript.js" defer></script>
+    <script src="axios.js" defer></script>
+  </head>
+  <body>
+    <h2>Register</h2>
+    <form onsubmit="event.preventDefault()">
+      <label for="usernametext">Username</label><br />
+      <input type="text" id="usernametext" /><br />
+      <label for="usernametext">Password</label><br />
+      <input type="text" id="passwordtext" /><br />
+      <label for="usernametext">Lastname</label><br />
+      <input type="text" id="lastnametext" /><br />
+      <label for="usernametext">Firstname</label><br />
+      <input type="text" id="firstnametext" /><br />
+      <button onclick="register()">Register</button>
+    </form>
+    <br />
+    <a style="color: blue; text-decoration: underline" onclick="loginpage()"
+      >login</a
+    >
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="backendscript.js" defer></script>
+    <script src="axios.js" defer></script>
+  </head>
+  <body>
+    <h2>Login</h2>
+    <form onsubmit="event.preventDefault()">
+      <input type="text" id="usernametext" /><br />
+      <input type="text" id="passwordtext" /><br />
+      <button onclick="login()">Login</button>
+    </form>
+    <br />
+    <a style="color: blue; text-decoration: underline" onclick="register()"
+      >register</a
+    >
+  </body>
+</html>
